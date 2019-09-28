@@ -2,14 +2,21 @@
   "name": "arraybrain",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
-    "start": "tsc & node ./dist/index.js"
+    "build": "tsc",
+    "test": "jest"
   },
   "keywords": [],
   "author": "huseyin ozan honamlioglu",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^4.1.2"
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.8",
+    "concurrently": "^4.1.2",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.3"
   }
 }
