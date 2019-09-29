@@ -1,8 +1,25 @@
-import { findArrayType } from './Tools';
+type DirectionType = 'desc' | 'asc';
+type ValueType = 'date' | 'string' | 'number';
 
-type Direction = 'desc' | 'asc';
-
-export const sort = <T>(arr: T[], direction?: Direction): T[] => {
-  let arrType = findArrayType<T>(arr);
+export const sort = <T>(
+  arr: T[],
+  direction?: DirectionType,
+  valueType?: ValueType,
+  key?: string,
+  alternativeKey?: string // a:b:c depends on how deep your object's level
+): T[] => {
+  if (key) {
+  } else {
+  }
   return arr;
 };
+
+class SorterHelper {
+  static sort = () => {};
+
+  static dateSorter = () => {};
+
+  static numberSorter = () => {};
+
+  static stringSorter = () => {};
+}
