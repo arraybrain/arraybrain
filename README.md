@@ -2,18 +2,18 @@
 
 Array brain is a simple tool that designed to make your array duties very simple.
 
-# CURRENT METHODS
+# METHODS
 
-Because of it is a very new tool, we are currenty contributing it to make great
+> sort()
 
-```
-sort<T>(
-  arr: T[],
-  direction?: DirectionType,
-  valueType?: ValueType,
+```typescript
+sort = (
+  arr: any[],
+  direction: Direction,
+  valueType?: Value,
   key?: string,
   alternativeKey?: string
-) // looks like very simple ha ? but powerfull
+)
 
 // lets define a objects inside an array also objects inside in objects
 let testArray = [
@@ -26,9 +26,9 @@ let testArray = [
 let sortedTestArray = sort(
   testArray, // specify the array
   'desc', // descending or ascending
-  'number', // what is its type ? 'number' | 'string' | 'date'
-  'price', // because of there is objects, define the key, so it sorts depend on it
-  'props:id' // what if the 'price' are same ? simply sort based on {props: id}
+  'number', // what is its type? 'number' | 'string' | 'date'
+  'price', // compare the 'price' tag
+  'props:date=date|asc' // what if the 'price' are same? simply sort based on 'date' prop, also specify 'ascending' or 'descending'
 );
 
 ```
