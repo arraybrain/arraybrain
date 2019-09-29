@@ -28,7 +28,7 @@ let sortedTestArray = sort(
   'desc', // descending or ascending
   'number', // what is its type? 'number' | 'string' | 'date'
   'price', // compare the 'price' tag
-  'props:date=date|asc' // what if the 'price' are same? simply sort based on 'date' prop, also specify 'ascending' or 'descending'
+  'props.date=date|asc' // what if the 'price' are same? simply sort based on 'date' prop, also specify 'ascending' or 'descending'
 );
 
 ```
