@@ -5,8 +5,8 @@
 
 # LESS CODE MORE ARRAY
 
-Array brain will make your complex array duties in one method.  
-Don't need to make any callbacks, don't need mix multiple methods, don't need make statements, Array knows what you need and does it for you.
+• Array brain will make your complex array duties in one method.  
+• Don't need to make any callbacks, don't need mix multiple methods, don't need make statements, Array knows what you need and does it for you.
 
 # METHODS
 
