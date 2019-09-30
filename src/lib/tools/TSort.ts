@@ -1,4 +1,4 @@
-import { ExtractedAlternativeKeys, Value, Direction } from './types';
+import { ExtractedAlternativeKeys, Value, Direction } from '../types';
 
 export class SortTools {
   static getObjectValuesWithLevels = (keylist: string[], object: any): any => {

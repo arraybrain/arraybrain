@@ -1,5 +1,5 @@
 import { ExtractedAlternativeKeys, Value, Direction } from './types';
-import { SortTools } from './Tools';
+import { SortTools } from './tools/TSort';
 
 export const sort = (
   arr: any[],

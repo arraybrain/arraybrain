@@ -1,14 +1,13 @@
 <p align="center">
 <img src="https://avatars1.githubusercontent.com/u/55918725?s=400&u=a4396a6bde4469bd82ab8f3a827e8df5e1fc36ca&v=4">
-<i style="color:#3a3a3a"></i>
 </p>
 
 # LESS CODE MORE ARRAY
 
 • Array brain will make your complex array duties in one method.  
-• Don't need to make any callbacks, don't need mix multiple methods, don't need make statements, Array knows what you need and does it for you.
+• Don't need to make any callbacks, don't need to mix multiple methods, don't need to make statements, Array knows what you need and does it for you.
 
-# METHODS
+# METHODS & USAGE
 
 > sort
 
