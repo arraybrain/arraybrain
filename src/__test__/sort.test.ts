@@ -1,4 +1,4 @@
-import { sort } from '../lib/Common';
+import { sort } from '../lib/Sort';
 
 describe('Simple sorter testing', () => {
   test('Simple array date sorting', () => {
@@ -84,6 +84,70 @@ describe('Complex sorter testing', () => {
       'number',
       'price'
       // 'props.date=date|asc'
+    );
+    expect(JSON.stringify(sortedTestArray)).toBe(JSON.stringify(expectedArray));
+  });
+
+  test('Object value should return date', () => {
+    let testArray = [
+      {
+        id: 2,
+        productName: 'head ligth',
+        price: '100',
+        props: { id: 2, date: '2011-11-12' }
+      },
+      {
+        id: 3,
+        productName: 'tire',
+        price: '500',
+        props: { id: 3, date: '2011-11-13' }
+      },
+      {
+        id: 1,
+        productName: 'bumper',
+        price: '500',
+        props: { id: 1, date: '2011-11-14' }
+      },
+      {
+        id: 5,
+        productName: 'seats',
+        price: '500',
+        props: { id: 5, date: '2011-11-15' }
+      }
+    ];
+
+    let expectedArray = [
+      {
+        id: 2,
+        productName: 'head ligth',
+        price: '100',
+        props: { id: 2, date: '2011-11-12' }
+      },
+      {
+        id: 5,
+        productName: 'seats',
+        price: '500',
+        props: { id: 5, date: '2011-11-15' }
+      },
+      {
+        id: 1,
+        productName: 'bumper',
+        price: '500',
+        props: { id: 1, date: '2011-11-14' }
+      },
+      {
+        id: 3,
+        productName: 'tire',
+        price: '500',
+        props: { id: 3, date: '2011-11-13' }
+      }
+    ];
+    let sortedTestArray = sort(
+      testArray,
+      'asc',
+      'number',
+      'price',
+      'props.date=date|desc'
     );
     expect(JSON.stringify(sortedTestArray)).toBe(JSON.stringify(expectedArray));
   });

@@ -25,10 +25,15 @@ let testArray = [
 
 let sortedTestArray = sort(
   testArray, // specify the array
-  'desc', // descending or ascending
+  'asc', // descending or ascending
   'number', // what is its type? 'number' | 'string' | 'date'
   'price', // compare the 'price' tag
-  'props.date=date|asc' // what if the 'price' are same? simply sort based on 'date' prop, also specify 'ascending' or 'descending'
+  'props.date=date|desc' // what if the 'price' are same? simply sort based on 'date' prop, also specify 'ascending' or 'descending'
 );
+
+// Defining an alternative key
+ props.date // simple javascript child object pointing with dots. Select date in props.
+ = // add an equality end of it.
+ date|desc // tell it, key of date contains value of date and sort it by descending.
 
 ```
