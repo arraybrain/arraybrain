@@ -10,7 +10,7 @@
 # METHODS & USAGE
 
 ```typescript
-// Before start, import the ArrayBrain first.
+// Before start, import the arraybrain first.
 import ArrayBrain from 'arraybrain';
 ```
 
@@ -44,7 +44,7 @@ Performing a complex <code>sort</code> method
 > sort by using one key and if the sorted values are same than sort by using another key.
 
 ```typescript
-// lets define a objects inside an array also objects inside in objects
+// lets define an objects inside an array also object inside in objects
 let arr = [
   {
     id: 2,
