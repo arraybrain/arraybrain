@@ -121,7 +121,7 @@ let arr = [
 
 let sortedArray = ArrayBrain.smartSort(arr, [
   'price=number|asc', // sort by prices in ascending
-  'props.date=date|desc', // if prices are not same then sort by props.dates in descending
-  'props.inProps.id=number|asc' // if dates are not same then sort by props.inProps.ids in ascending
+  'props.date=date|desc', // if prices are same then sort by props.dates in descending
+  'props.inProps.id=number|asc' // if dates are same then sort by props.inProps.ids in ascending
 ]);
 ```
