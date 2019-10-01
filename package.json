@@ -1,6 +1,6 @@
 {
   "name": "arraybrain",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -8,9 +8,25 @@
     "build": "tsc",
     "test": "jest"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arraybrain/arraybrain"
+  },
+  "keywords": [
+    "arraybrain",
+    "array",
+    "arrays",
+    "sorter",
+    "smart sort",
+    "smart array",
+    "array sort",
+    "descending",
+    "ascending",
+    "complex array sorter",
+    "complex array duties"
+  ],
   "author": "huseyin ozan honamlioglu",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.8",
