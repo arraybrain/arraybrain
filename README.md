@@ -7,6 +7,10 @@
 • Array brain will make your complex array duties in one method.  
 • Don't need to make any callbacks, don't need to mix multiple methods, don't need to make statements, Array knows what you need and does it for you.
 
+# INSTALLATION
+
+<code>npm install arraybrain</code>
+
 # METHODS & USAGE
 
 ```typescript
