@@ -1,6 +1,14 @@
 import { ExtractedAlternativeKeys, Value, Direction } from './types';
 import { SortTools } from './tools/TSort';
 
+export const smartSort = (
+  arr: any[],
+  direction: Direction,
+  keys: string[]
+): any[] => {
+  return arr;
+};
+
 export const sort = (
   arr: any[],
   direction: Direction,
