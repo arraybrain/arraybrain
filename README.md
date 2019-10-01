@@ -44,7 +44,7 @@ Performing a complex <code>sort</code> method
 > sort by using one key and if the sorted values are same than sort by using another key.
 
 ```typescript
-// lets define an objects inside an array also object inside in objects
+// lets define objects inside an array also object inside in objects
 let arr = [
   {
     id: 2,
