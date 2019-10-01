@@ -7,6 +7,10 @@
 • Array brain will make your complex array duties in one method.  
 • Don't need to make any callbacks, don't need to mix multiple methods, don't need to make statements, Array knows what you need and does it for you.
 
+# INSTALLATION
+
+<code>npm install arraybrain</code>
+
 # METHODS & USAGE
 
 ```typescript
@@ -116,8 +120,8 @@ let arr = [
 ];
 
 let sortedArray = ArrayBrain.smartSort(arr, [
-  'price=number|asc', // if prices are not same then sort by prices
-  'props.date=date|desc', // if dates are not same then sort by dates
-  'props.inProps.id=number|asc' // if ids are not same then sort by ids
+  'price=number|asc', // sort by prices in ascending
+  'props.date=date|desc', // if prices are same then sort by props.dates in descending
+  'props.inProps.id=number|asc' // if dates are same then sort by props.inProps.ids in ascending
 ]);
 ```
