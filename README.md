@@ -9,7 +9,7 @@
 
 # METHODS & USAGE
 
-> sort
+> sort by using one key and if the sorted values are same than sort by using another key.
 
 ```typescript
 sort = (
