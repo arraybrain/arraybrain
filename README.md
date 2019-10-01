@@ -9,36 +9,115 @@
 
 # METHODS & USAGE
 
+```typescript
+// Before start, import the arraybrain first.
+import ArrayBrain from 'arraybrain';
+```
+
+## Not: How to define a key property ?
+
+```
+sample key ⇒ 'props.date=date|desc'
+Explanation
+props.date ⇒ is a simple js object iteration. Select date from prop.
+after equal sign "="
+date|desc ⇒ the props.date is a date property and I want to sort by descending
+```
+
+Performing a very simple <code>sort</code> method
+
+```typescript
+function sort(
+  arr: any[],
+  direction: Direction,
+  valueType: Value,
+  key?: string,
+  alternativeKey?: string
+): any[];
+
+let arr = ['2011-11-16', '2011-11-13', '2011-11-12'];
+let sortedArray = ArrayBrain.sort(arr, 'desc', 'date');
+```
+
+Performing a complex <code>sort</code> method
+
 > sort by using one key and if the sorted values are same than sort by using another key.
 
 ```typescript
-sort = (
-  arr: any[],
-  direction: Direction,
-  valueType?: Value,
-  key?: string,
-  alternativeKey?: string
-)
-
-// lets define a objects inside an array also objects inside in objects
-let testArray = [
-  { id: 2, productName: 'head ligth', price: '100', props: { id: 2, date: '2011-11-12' } },
-  { id: 3, productName: 'tire', price: '500', props: { id: 3, date: '2011-11-15' } },
-  { id: 1, productName: 'bumper', price: '500', props: { id: 1, date: '2011-11-14' } },
-  { id: 5, productName: 'seats', price: '800', props: { id: 5, date: '2011-11-13' } }
+// lets define objects inside an array also object inside in objects
+let arr = [
+  {
+    id: 2,
+    productName: 'head ligth',
+    price: '100',
+    props: { id: 2, date: '2011-11-12' }
+  },
+  {
+    id: 3,
+    productName: 'tire',
+    price: '500',
+    props: { id: 3, date: '2011-11-15' }
+  },
+  {
+    id: 1,
+    productName: 'bumper',
+    price: '500',
+    props: { id: 1, date: '2011-11-14' }
+  },
+  {
+    id: 5,
+    productName: 'seats',
+    price: '800',
+    props: { id: 5, date: '2011-11-13' }
+  }
 ];
 
-let sortedTestArray = sort(
-  testArray, // specify the array
+let sortedArray = sort(
+  arr, // specify the array
   'asc', // descending or ascending
   'number', // what is its type? 'number' | 'string' | 'date'
   'price', // compare the 'price' tag
   'props.date=date|desc' // what if the 'price' are same? simply sort based on 'date' prop, also specify 'ascending' or 'descending'
 );
+```
 
-// Defining an alternative key
- props.date // simple javascript child object pointing with dots. Select date in props.
- = // add an equality end of it.
- date|desc // tell it, key of date contains value of date and sort it by descending.
+Performing a very complex <code>smartSort</code> method
 
+> Sort the objects with given keys in the props array until the values are not same.
+
+```typescript
+function smartSort(arr: any[], keys: string[]): any[];
+
+let arr = [
+  {
+    id: 2,
+    productName: 'head ligth',
+    price: '100',
+    props: { id: 2, date: '2011-11-12', inProps: { id: 1 } }
+  },
+  {
+    id: 5,
+    productName: 'seats',
+    price: '500',
+    props: { id: 5, date: '2011-11-15', inProps: { id: 8 } }
+  },
+  {
+    id: 1,
+    productName: 'bumper',
+    price: '500',
+    props: { id: 1, date: '2011-11-14', inProps: { id: 3 } }
+  },
+  {
+    id: 3,
+    productName: 'tire',
+    price: '500',
+    props: { id: 3, date: '2011-11-14', inProps: { id: 5 } }
+  }
+];
+
+let sortedArray = ArrayBrain.smartSort(arr, [
+  'price=number|asc', // if prices are not same then sort by prices
+  'props.date=date|desc', // if dates are not same then sort by dates
+  'props.inProps.id=number|asc' // if ids are not same then sort by ids
+]);
 ```

@@ -1,6 +1,44 @@
 import { ExtractedAlternativeKeys, Value, Direction } from './types';
 import { SortTools } from './tools/TSort';
 
+export const smartSort = (arr: any[], props: string[]): any[] => {
+  return arr.sort((a, b) => {
+    let val: any; // prepairing a return value
+
+    // loop in passed props
+    for (let index = 0; index < props.length; index++) {
+      const element = props[index];
+      let extract = SortTools.extractAlternatives(element);
+      let value_a = SortTools.getObjectValuesWithLevels(extract.keys, a);
+      let value_b = SortTools.getObjectValuesWithLevels(extract.keys, b);
+
+      if (value_a !== value_b) {
+        val = SortTools.sorterSwitchCase(
+          value_a,
+          value_b,
+          extract.direction,
+          extract.valueType
+        );
+        break;
+      }
+
+      // if values are still same and also we hit the last key in the array that should be compared, then just put it as much as possible way.
+      if (index === props.length - 1 && value_a === value_b) {
+        val = SortTools.sorterSwitchCase(
+          value_a,
+          value_b,
+          extract.direction,
+          extract.valueType
+        );
+        break;
+      }
+    }
+
+    // return the wanted object or whatever needed
+    return val;
+  });
+};
+
 export const sort = (
   arr: any[],
   direction: Direction,
@@ -25,8 +63,6 @@ export const sort = (
     ) {
       let helper = new SorterHelper(arr, direction, valueType);
       return helper.simpleSorter();
-    } else if (valueType === 'complex') {
-      throw new Error('[-] Complex array needs a "key" property');
     } else {
       throw new Error('[-] Unknown value type');
     }
