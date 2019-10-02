@@ -1,8 +1,10 @@
-import { sort, smartSort } from './lib/Sort';
+import { sort, smartSort } from './lib/ArraySort';
+import { smartObjectSort } from './lib/ObjectSort';
 
 const ArrayBrain = {
   sort,
-  smartSort
+  smartSort,
+  smartObjectSort
 };
 
 export default ArrayBrain;

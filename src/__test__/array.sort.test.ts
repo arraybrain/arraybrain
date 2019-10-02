@@ -1,4 +1,4 @@
-import ArrayBrain from '../';
+import ArrayBrain from '..';
 
 const testMyObjects = (a: any, b: any) =>
   expect(JSON.stringify(a)).toBe(JSON.stringify(b));
