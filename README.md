@@ -135,7 +135,7 @@ Performing very complex sorting on Objects with <code>smartObjectSort</code> met
 
 ```typescript
 function smartObjectSort = (
-  obj: Objext, // Pass the object that you want to sort
+  obj: SortObjectParameter, // Pass the object that you want to sort
   keys: string[], // Define compareable keys as much as you want!
   keepKeyAsProp: boolean, // Do you still want to store actual keys ?
   retType?: 'obj' | 'arr' // Return a sorted array or same object as sorted!
