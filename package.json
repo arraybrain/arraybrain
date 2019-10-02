@@ -1,7 +1,7 @@
 {
   "name": "arraybrain",
-  "version": "1.0.4",
-  "description": "",
+  "version": "1.0.5",
+  "description": "Arrays never been so smart before.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
