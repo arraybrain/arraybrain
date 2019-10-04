@@ -1,4 +1,4 @@
-import { SortObjectParameter } from './types';
+import { SortObjectParameter } from './types/DSort';
 import { smartSort } from './ArraySort';
 
 export const smartObjectSort = (
