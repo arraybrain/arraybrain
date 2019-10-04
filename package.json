@@ -1,6 +1,6 @@
 {
   "name": "arraybrain",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "Arrays never been so smart before.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -23,7 +23,17 @@
     "descending",
     "ascending",
     "complex array sorter",
-    "complex array duties"
+    "complex array duties",
+    "object",
+    "smart object sort",
+    "object sort",
+    "smart objects",
+    "object duties",
+    "array duties",
+    "sort object",
+    "easy sort",
+    "easy array",
+    "easy object"
   ],
   "author": "huseyin ozan honamlioglu",
   "license": "MIT",
