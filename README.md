@@ -29,8 +29,7 @@ date|desc ⇒ the props.date is a date property and I want to sort by descending
 ```
 
 <hr>
-<img style="height: 50px" src="https://firebasestorage.googleapis.com/v0/b/cypchat-227c2.appspot.com/o/Libraries%2FArrayBrain%2Fsimple.png?alt=media&token=b350934d-d662-4f19-8cfb-d2e562284744" /><br>
-Performing a very simple sorting on Arrays <code>sort</code> method
+<p><img height="50" src="https://firebasestorage.googleapis.com/v0/b/cypchat-227c2.appspot.com/o/Libraries%2FArrayBrain%2Fsimple.png?alt=media&token=b350934d-d662-4f19-8cfb-d2e562284744" /> Performing a very simple sorting on Arrays <code>sort</code> method</p>
 
 ```typescript
 function sort(
@@ -46,8 +45,7 @@ let sortedArray = ArrayBrain.sort(arr, 'desc', 'date');
 ```
 
 <hr>
-<img style="height: 50px" src="https://firebasestorage.googleapis.com/v0/b/cypchat-227c2.appspot.com/o/Libraries%2FArrayBrain%2Fcomplex.png?alt=media&token=ba68a2de-ae9c-402e-9013-35cea5d53a4b" /><br>
-Performing a complex sorting on Arrays with <code>sort</code> method
+<p><img height="50" src="https://firebasestorage.googleapis.com/v0/b/cypchat-227c2.appspot.com/o/Libraries%2FArrayBrain%2Fcomplex.png?alt=media&token=ba68a2de-ae9c-402e-9013-35cea5d53a4b" /> Performing a complex sorting on Arrays with <code>sort</code> method</p>
 
 > Sort by using one key and if the sorted values are same than sort by using another key.
 
@@ -90,8 +88,7 @@ let sortedArray = sort(
 ```
 
 <hr>
-<img style="height: 50px" src="https://firebasestorage.googleapis.com/v0/b/cypchat-227c2.appspot.com/o/Libraries%2FArrayBrain%2Fverycomplex.png?alt=media&token=cb83eb73-b2c9-40a1-bc29-9b89d9695a8e" /><br/>
-Performing very complex sorting on Arrays with <code>smartSort</code> method
+<p><img height="50" src="https://firebasestorage.googleapis.com/v0/b/cypchat-227c2.appspot.com/o/Libraries%2FArrayBrain%2Fverycomplex.png?alt=media&token=cb83eb73-b2c9-40a1-bc29-9b89d9695a8e" /> Performing very complex sorting on Arrays with <code>smartSort</code> method</p>
 
 > Sort the objects with given keys in the props array until the values are not same.
 
@@ -136,8 +133,7 @@ let sortedArray = ArrayBrain.smartSort(arr, [
 ```
 
 <hr>
-<img style="height: 50px" src="https://firebasestorage.googleapis.com/v0/b/cypchat-227c2.appspot.com/o/Libraries%2FArrayBrain%2Fcomplexobject.png?alt=media&token=1183fe44-4e89-449a-a4f4-1565a7e5c136" /><br/>
-Performing very complex sorting on Objects with <code>smartObjectSort</code> method
+<p><img height="50" src="https://firebasestorage.googleapis.com/v0/b/cypchat-227c2.appspot.com/o/Libraries%2FArrayBrain%2Fcomplexobject.png?alt=media&token=1183fe44-4e89-449a-a4f4-1565a7e5c136" /> Performing very complex sorting on Objects with <code>smartObjectSort</code> method</p>
 
 > Sort Objects {} and get output as type of sorted Object or sorted Array.
 
