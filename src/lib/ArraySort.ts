@@ -1,4 +1,4 @@
-import { ExtractedAlternativeKeys, Value, Direction } from './types';
+import { ExtractedAlternativeKeys, Value, Direction } from './types/DSort';
 import { SortTools } from './tools/TSort';
 
 export const smartSort = (arr: any[], props: string[]): any[] => {
