@@ -1,4 +1,4 @@
-import { ExtractedAlternativeKeys, Value, Direction } from '../types';
+import { ExtractedAlternativeKeys, Value, Direction } from '../types/DSort';
 
 export class SortTools {
   // Extract string definition eg. "props.inProps.id=number|asc" ⇒ { ["props", "inProps", "id"], number, desc }

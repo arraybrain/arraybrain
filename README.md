@@ -5,7 +5,7 @@
 # A QUICK USE CASE
 
 • For example, you made a get request to your API, and it returned you a bunch of {objects} in {objects} also in {objects} in an [ParentArray] or {ParentObject}.  
-• Now you want to <b>Sort them by Descending of price values</b>. <span style="color: red">If price are same</span> then you want to <b>sort "props.id" values by Ascending</b> which lives in second object inside the first object. <span style="color: red">If also "props.id" values are same</span> then <b>sort "props.anotherProps.anotherProps.id" values by Descending</b>.
+• Now you want to <b>Sort them by Descending of price values</b>. <em>If price are same</em> then you want to <b>sort "props.id" values by Ascending</b> which lives in second object inside the first object. <em>If also "props.id" values are same</em> then <b>sort "props.anotherProps.anotherProps.id" values by Descending</b>.
 
 # INSTALLATION
 

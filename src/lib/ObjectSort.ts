@@ -1,8 +1,9 @@
-import { SortObjectParameter } from './types/DSort';
+import { Gen } from './tools/TGen';
+import { EmptyObject } from './types/DSort';
 import { smartSort } from './ArraySort';
 
 export const smartObjectSort = (
-  obj: SortObjectParameter,
+  obj: EmptyObject,
   keys: string[],
   keepKeyAsProp: boolean,
   retType?: 'obj' | 'arr' // default array
@@ -11,14 +12,7 @@ export const smartObjectSort = (
   let sortedArray;
 
   // get keys of objects first
-  let objKeys = Object.keys(obj);
-  let createArrObj: any[] = [];
-
-  // create new array with object
-  objKeys.map(key => {
-    let o = { ...obj[key], _arraybrainkey: key };
-    createArrObj.push(o);
-  });
+  let createArrObj = Gen.objectToArray(obj);
 
   // now sort the new object
   sortedArray = smartSort(createArrObj, keys);

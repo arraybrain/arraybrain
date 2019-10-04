@@ -5,8 +5,7 @@ import { Dog } from './lib/Search';
 const ArrayBrain = {
   sort,
   smartSort,
-  smartObjectSort,
-  Dog
+  smartObjectSort
 };
 
 export default ArrayBrain;

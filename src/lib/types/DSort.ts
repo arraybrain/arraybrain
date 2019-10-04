@@ -2,7 +2,7 @@
 
 export type Direction = 'desc' | 'asc';
 export type Value = 'string' | 'number' | 'date';
-export type SortObjectParameter = { [key: string]: any };
+export type EmptyObject = { [key: string]: any };
 
 export interface ExtractedAlternativeKeys {
   keys: string[];
